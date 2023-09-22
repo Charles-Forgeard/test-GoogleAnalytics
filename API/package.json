@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "type":"module",
+  "description": "api to serve custom datas from google analytics",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Charles Forgeard",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
