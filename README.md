@@ -15,19 +15,19 @@ Choose manual intégration and paste this code instead of similar code into inde
 
 When test webpage will be updated, you should visit it a few times in order to create some GA4 datas.
 
-## Step 1. Enable the API
+## Step 3. Enable the API
 
 Go to [Google Analytics Data API documentation](https://developers.google.com/analytics/devguides/reporting/data/v1/quickstart-client-libraries?hl=en) and perform step 1. 
 You must place your credentials.json file in /google_analytics folder and change filename from "credentials.json" to "GA-credentials.json".
 
-## Step 2. Get GA4 property ID
+## Step 4. Get GA4 property ID
 
 Got to [your GA4 dashboard](https://analytics.google.com/), click on Administration button. Copy your propertyID (numbers following your account name, on the top of property column) and paste it as propertyID value into .env.example file and rename file from ".env.example" to ".env".
 
-## Step 3. Run API
+## Step 5. Run API
 
 In a terminal, go inside API folder and use:
-
+git add
 - pnpm run install
 
 to install dependencies 
@@ -36,6 +36,6 @@ to install dependencies
 
 to run the server and provide API
 
-## Step 4. Get GA4 datas
+## Step 6. Get GA4 datas
 
 Use your browser and go to localhost:3000/datas. GA4 datas will be displayed.
