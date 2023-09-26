@@ -1,4 +1,4 @@
-#GA4 API tests
+# GA4 API tests
 
 This project is about perform request to GA4 API and provide custom datas with a private API.
 
@@ -29,9 +29,11 @@ Got to [your GA4 dashboard](https://analytics.google.com/), click on Administrat
 In a terminal, go inside API folder and use:
 
 - pnpm run install
+
 to install dependencies 
 
 - pnpm run start
+
 to run the server and provide API
 
 ## Step 4. Get GA4 datas
