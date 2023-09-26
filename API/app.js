@@ -14,6 +14,7 @@ app.get('/datas',async (req,res)=>{
         res.status(200).send(data);
     }catch(error){
         console.error(error)
+        console.error(error.metadata);
         res.status(500).send(error.message);
     }
 })

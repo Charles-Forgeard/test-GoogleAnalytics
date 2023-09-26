@@ -3,6 +3,7 @@ import 'dotenv/config';
 
 const propertyId = process.env['GA_PROPERTY_ID'];
 
+
 process.env['GOOGLE_APPLICATION_CREDENTIALS']='google_analytics/GA-credentials.json'
 
 const analyticsDataClient = new BetaAnalyticsDataClient();
@@ -18,16 +19,30 @@ async function runReport() {
       ],
       dimensions: [
         {
+          name: 'country',
+        },
+        {
           name: 'city',
         },
         {
-          name: 'country',
+          name: 'date',
+        },{
+          name: 'browser',
         }
       ],
       metrics: [
         {
+          name: 'active1DayUsers',
+        },
+        {
           name: 'activeUsers',
         },
+        {
+          name: 'screenPageViewsPerUser',
+        },
+        {
+          name: 'screenPageViews',
+        }
       ],
     });
     return response.rows
