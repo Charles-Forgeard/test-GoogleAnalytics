@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "description": "api to serve custom datas from google analytics",
   "main": "server.js",
   "scripts": {
@@ -11,6 +11,9 @@
   "author": "Charles Forgeard",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "@google-analytics/data": "^4.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "googleapis": "^126.0.1"
   }
 }
