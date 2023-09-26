@@ -1,6 +1,7 @@
 import {BetaAnalyticsDataClient} from '@google-analytics/data';
+import 'dotenv/config';
 
-const propertyId = '407848432';
+const propertyId = process.env['GA_PROPERTY_ID'];
 
 process.env['GOOGLE_APPLICATION_CREDENTIALS']='google_analytics/GA-credentials.json'
 
@@ -19,6 +20,9 @@ async function runReport() {
         {
           name: 'city',
         },
+        {
+          name: 'country',
+        }
       ],
       metrics: [
         {

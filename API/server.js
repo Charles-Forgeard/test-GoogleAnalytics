@@ -1,6 +1,5 @@
 import {createServer} from "http";
 import app from "./app.js";
-import 'dotenv/config';
 
 const httpServer = createServer(app);
 const port = 3000;
