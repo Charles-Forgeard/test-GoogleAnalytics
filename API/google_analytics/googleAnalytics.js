@@ -1,5 +1,6 @@
 import {BetaAnalyticsDataClient} from '@google-analytics/data';
 import 'dotenv/config';
+import format_GA_response from './format_GA_response.js';
 
 const propertyId = process.env['GA_PROPERTY_ID'];
 
@@ -26,7 +27,8 @@ async function runReport() {
         },
         {
           name: 'date',
-        },{
+        },
+        {
           name: 'browser',
         }
       ],
@@ -45,7 +47,7 @@ async function runReport() {
         }
       ],
     });
-    return response.rows
+    return format_GA_response(response)
   }
 
 export default runReport;
